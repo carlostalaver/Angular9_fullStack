@@ -11,6 +11,8 @@ _Para la parate de UI se deja a cargo de Bootstrap, para ello se necesita instal
 * **npm i --save-dev @ngxs/store**
 * **npm install @ngxs/devtools-plugin --save-dev** [Link](https://www.ngxs.io/plugins/devtools)
 * **npm i --save-dev @ngxs/logger-plugin@dev**
+* **npm i @nestjs/mongoose mongoose**
+* **npm  i @types/mongoose -D**
 
 _Una vez instalado se debe configurar el bootstarp en la aplicación, en archivo angular.jon cambiar a:_
 
@@ -26,3 +28,16 @@ _Una vez instalado se debe configurar el bootstarp en la aplicación, en archivo
 ]
 },
 ```
+
+_Para crear nuestro servidor local, que sera el backend_
+
+```
+ng add @nestjs/ng-universal
+```
+
+_Para levantar el frontend y el backend, lanzar este comando_ 
+```
+npm run dev:ssr
+```
+
+quede en el min 36
